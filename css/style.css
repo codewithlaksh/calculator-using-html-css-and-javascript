@@ -1,0 +1,86 @@
+/* Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.calculator_container {
+  padding: 20px;
+  width: 50%;
+  margin: 25px auto;
+  display: block;
+}
+
+input#screen {
+  padding: 12px 8px;
+  width: 512px;
+  margin: 12px auto;
+  display: block;
+  outline: 0;
+  box-shadow: 0;
+  border: 2px solid #000;
+  border-radius: 0.25rem;
+  transition: 0.4s all ease;
+  font-size: 1em;
+}
+
+input#screen:disabled {
+  background: none;
+  cursor: not-allowed;
+}
+
+div.main {
+  padding: 12px 8px;
+  width: 512px;
+  margin: 12px auto;
+  display: block;
+}
+
+.row {
+  display: flex;
+}
+
+.row > button {
+  padding: 12px 8px;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  border: 2px solid #ff0000;
+  border-radius: 0.25rem;
+  background: none;
+  transition: 0.4s all ease;
+  margin: 8px;
+}
+
+.row > button:hover {
+  background: #ff0000;
+  color: #fff;
+}
+
+.action-row {
+  display: flex;
+  margin: auto;
+  width: 512px;
+}
+
+#resetBtn,
+#evaluate,
+#deleteChar {
+  padding: 12px 8px;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  border: 2px solid #000;
+  border-radius: 0.25rem;
+  background: none;
+  transition: 0.4s all ease;
+  margin: 8px;
+}
+
+#resetBtn:hover,
+#evaluate:hover,
+#deleteChar:hover {
+  background: #000;
+  color: #fff;
+}

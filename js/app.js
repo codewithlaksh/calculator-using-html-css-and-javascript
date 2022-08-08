@@ -11,8 +11,10 @@ Array.from(buttons).forEach(element => {
             screen.value = output;
         }
         else if (e.target.id == 'evaluate') {
-            let output = eval(screen.value);
-            screen.value = output;
+            if(screen.value != ""){
+                let output = eval(screen.value);
+                screen.value = output;
+            }
         }
         else {
             screen.value += e.target.innerText;
